@@ -9,9 +9,45 @@
         <script src="js/uikit.js"></script>
         <script src="js/uikit-icons.min.js"></script>
         <script src="uikit/dist/js/uikit-icons.min.js"></script>
+        <style>
+        nav {
+          -webkit-transition: background-color ease 250ms;
+          transition: background-color ease 250ms;
+        }
+        nav .uk-navbar-item,
+        nav .uk-navbar-nav > li > a,
+        nav .uk-navbar-toggle {
+          -webkit-transition: height ease 500ms;
+          transition: height ease 500ms;
+          color: #003DA6;
+        }
+        nav.uk-active {
+          background-color: #FFF;
+        }
+        nav.uk-active .uk-navbar-item,
+        nav.uk-active .uk-navbar-nav > li > a,
+        nav.uk-active .uk-navbar-toggle {
+          color: #003DA6;
+          height: 60px;
+        }
+</style>
     </head>
     <body>
-      <h1>ADX<h1>
-        <h2>This is a test.</h2>
+      <div class="uk-position-relative"><img src="images/physician-background-adx-homepage.jpg" style="opacity: .5;"/>
+        <div class="uk-position-top">
+          <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar="" uk-sticky="">
+            <div class="uk-navbar-left">
+              <ul class="uk-navbar-nav" style="margin-left: 5vw;">
+                <li class="uk-active"><a href="adx.html"><img src="images/logo-adx-small.svg" class="uk-svg" style="width: 60px; height: 30px;"/></a></li>
+                <li><a href="#">Employers</a></li>
+                <li><a href="#">Brokers</a></li>
+                <li><a href="#">TPA's</a></li>
+                <li><a href="#">Providers</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div style="height:1500px;"></div>
     </body>
 </html>
