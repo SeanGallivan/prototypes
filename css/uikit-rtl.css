@@ -41,6 +41,7 @@ a {
 a:active,
 a:hover {
   outline: none;
+  text-decoration: none;
 }
 /*
  * Style
@@ -54,7 +55,7 @@ a,
 a:hover,
 .uk-link:hover {
   color: #0f6ecd;
-  text-decoration: underline;
+  text-decoration: none;
 }
 /* Text-level semantics
  ========================================================================== */
